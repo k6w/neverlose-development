@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "runtime.version": "LuaJIT",
+  "runtime.nonstandardSymbol": ["+=", "-=", "*=", "/="],
+  "runtime.path": [
+    "?.lua",
+    "?/init.lua",
+    "neverlose-lua-defs/library/modules/?.lua"
+  ],
+  "workspace.library": ["neverlose-lua-defs/library"],
+  "workspace.checkThirdParty": false,
+  "workspace.ignoreDir": [".git", "neverlose-lua-defs/scripts", "neverlose-lua-defs/library"],
+  "completion.callSnippet": "Both",
+  "completion.keywordSnippet": "Both",
+  "hint.enable": true,
+  "hint.paramName": "All",
+  "hint.setType": true,
+  "diagnostics.globals": [
+    "ui", "render", "entity", "rage", "esp", "materials", "network",
+    "cvar", "db", "files", "json", "panorama", "common", "utils",
+    "globals", "bit", "events", "vector", "color", "ffi",
+    "print_error", "print_chat", "print_raw", "print_dev",
+    "to_ticks", "to_time", "new_class", "msgpack",
+    "localplayer", "font", "important", "mismatch_text"
+  ],
+  "diagnostics.disable": [
+    "lowercase-global",
+    "param-type-mismatch",
+    "redundant-parameter",
+    "missing-parameter",
+    "undefined-field",
+    "need-check-nil",
+    "cast-local-type"
+  ],
+  "diagnostics.ignoredFiles": "Disable",
+  "diagnostics.neededFileStatus": {
+    "undefined-global": "Any"
+  }
+}
